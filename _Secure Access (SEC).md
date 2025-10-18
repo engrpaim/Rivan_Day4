@@ -1452,6 +1452,9 @@ Now hide behind the firewall.
 @UTM-PH
 config t
 IP Nat inside source static tcp 192.168.103.21 80 208.8.8.101 8080
+IP Nat inside source static tcp 192.168.103.21 443 208.8.8.101 8443
+IP Nat inside source static tcp 192.168.103.22 80 208.8.8.101 80
+IP Nat inside source static tcp 192.168.103.22 443 208.8.8.101 443
 end
 show ip nat translation
 
